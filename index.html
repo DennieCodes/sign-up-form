@@ -11,34 +11,67 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="index.css" />
 
     <title>Frontend Mentor | Intro component with sign up form</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    Learn to code by watching others See how experienced developers solve
-    problems in real-time. Watching scripted tutorials is great, but
-    understanding how developers think is invaluable. Try it free 7 days then
-    $20/mo. thereafter First Name Last Name Email Address Password Claim your
-    free trial By clicking the button, you are agreeing to our Terms and
-    Services
+    <div class="container">
+      <div>
+        <h1>Learn to code by watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </div>
 
+      <div>
+        <button>Try it free 7 days then $20/mo. thereafter</button>
+
+        <form method="POST">
+          <input
+            name="first_name"
+            type="text"
+            aria-label="First Name"
+            placeholder="First Name"
+          />
+
+          <input
+            name="last_name"
+            type="text"
+            aria-label="Last Name"
+            placeholder="Last Name"
+          />
+
+          <input
+            name="email_address"
+            type="email"
+            aria-label="Email Address"
+            placeholder="Email Address"
+          />
+
+          <input
+            name="password"
+            type="password"
+            aria-label="Password"
+            placeholder="Password"
+          />
+
+          <button type="submit">Claim your free trial</button>
+
+          <div>
+            By clicking the button, you are agreeing to our Terms and Services
+          </div>
+        </form>
+      </div>
+    </div>
     <footer>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="https://github.com/Oculareo">Oculareo</a>.
       </p>
     </footer>
   </body>
