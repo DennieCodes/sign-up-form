@@ -11,13 +11,18 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
 
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body>
     <div class="container">
-      <div>
+      <div class="column">
         <h1>Learn to code by watching others</h1>
         <p>
           See how experienced developers solve problems in real-time. Watching
@@ -26,10 +31,12 @@
         </p>
       </div>
 
-      <div>
-        <button>Try it free 7 days then $20/mo. thereafter</button>
+      <div class="column">
+        <button class="button__trial">
+          <strong>Try it free 7 days</strong> then $20/mo. thereafter
+        </button>
 
-        <form method="POST">
+        <form class="form" method="POST">
           <input
             name="first_name"
             type="text"
@@ -58,10 +65,15 @@
             placeholder="Password"
           />
 
-          <button type="submit">Claim your free trial</button>
+          <button class="button__submit" type="submit">
+            Claim your free trial
+          </button>
 
           <div>
-            By clicking the button, you are agreeing to our Terms and Services
+            <p class="p__terms">
+              By clicking the button, you are agreeing to our
+              <a class="a__terms" href="#">Terms and Services</a>
+            </p>
           </div>
         </form>
       </div>
