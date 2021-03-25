@@ -1,7 +1,6 @@
 /* Layout styling ======================================= */
 
 body {
-  padding: 5em 3em;
   font-size: 16px;
 }
 
@@ -11,12 +10,14 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  flex-basis: 47%;
 
   background-image: url("./images/bg-intro-desktop.png");
   background-color: hsl(0, 100%, 74%);
 
   height: 100%;
   padding: 6em;
+  margin: 5em 3em;
 }
 
 .form {
@@ -32,12 +33,12 @@ body {
 button,
 input {
   width: 100%;
-  height: 3.5rem;
   border-radius: 10px;
   margin-bottom: 1.5em;
 }
 
 input {
+  height: 3rem;
   text-indent: 2em;
   border: 1px solid hsl(246, 25%, 77%);
   font-weight: 600;
@@ -49,6 +50,7 @@ input:hover {
 }
 
 button {
+  border: none;
   cursor: pointer;
 }
 
@@ -56,6 +58,7 @@ button {
   color: white;
   background-color: hsl(248, 32%, 49%);
   font-size: 1.1rem;
+  padding: 0.75em 2em;
 }
 
 .button__submit {
@@ -64,11 +67,12 @@ button {
   font-size: 1.05rem;
   text-transform: uppercase;
   margin-bottom: 0.5em;
+  padding: 0.75em 1em;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
 }
 
 .form,
 .button__trial {
-  /* filter: drop-shadow(0 5px 10px black); */
   box-shadow: 0 8px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -85,7 +89,7 @@ h1 {
 }
 
 p {
-  color: white;
+  color: hsl(246, 25%, 90%);
 }
 
 .p__terms {
@@ -98,6 +102,79 @@ p {
   color: hsl(0, 100%, 74%);
   text-decoration: none;
   font-weight: 700;
+}
+
+/* Media Query styling ======================================= */
+
+/* Tablet 800 x 600 */
+@media all and (max-width: 800px) {
+  .container {
+    margin: 0;
+    padding: 3em;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 500;
+  }
+
+  .button__submit {
+    font-size: 0.9rem;
+    padding: 1.25em 0.5em;
+  }
+}
+
+/* Up to tablet portrait 600 x 800 */
+@media all and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    margin: 0;
+    padding: 2em 1.5em;
+  }
+
+  .column {
+    width: 100%;
+    text-align: center;
+    margin: 2em 0;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    line-height: 1.25rem;
+  }
+
+  .p__terms {
+    font-size: 0.65rem;
+  }
+
+  .form {
+    padding: 1.25em;
+  }
+
+  input {
+    text-indent: 1rem;
+  }
+
+  button {
+    border-radius: 5px;
+  }
+
+  .button__trial {
+    padding: 0.75em 2em;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+
+  .button__submit {
+    font-size: 0.9rem;
+    padding: 1.25em 0.5em;
+  }
 }
 
 /* Footer styling ======================================= */
