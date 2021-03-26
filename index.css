@@ -1,8 +1,14 @@
-/* Layout styling ======================================= */
+/* Global styling ======================================= */
 
 body {
   font-size: 16px;
 }
+
+.invisible {
+  display: none;
+}
+
+/* Layout styling ======================================= */
 
 .container {
   display: flex;
@@ -42,6 +48,7 @@ input {
   text-indent: 2em;
   border: 1px solid hsl(246, 25%, 77%);
   font-weight: 600;
+  color: hsl(249, 10%, 26%);
 }
 
 input:focus,
@@ -104,13 +111,21 @@ p {
   font-weight: 700;
 }
 
+.warning {
+  font-size: 0.75rem;
+  color: hsl(0, 100%, 74%);
+  margin-left: 1em;
+  margin-top: -1.5em;
+  margin-bottom: 1em;
+}
+
 /* Media Query styling ======================================= */
 
 /* Tablet 800 x 600 */
-@media all and (max-width: 800px) {
+@media all and (max-width: 1000px) {
   .container {
     margin: 0;
-    padding: 3em;
+    padding: 2.5em;
   }
 
   h1 {
@@ -126,7 +141,7 @@ p {
 }
 
 /* Up to tablet portrait 600 x 800 */
-@media all and (max-width: 600px) {
+@media all and (max-width: 800px) {
   .container {
     flex-direction: column;
     margin: 0;

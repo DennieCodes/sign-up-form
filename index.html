@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
+
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"
+    /> -->
 
     <link
       rel="icon"
@@ -36,36 +40,46 @@
           <strong>Try it free 7 days</strong> then $20/mo. thereafter
         </button>
 
-        <form class="form" method="POST">
+        <form class="form" name="sign_up">
           <input
+            id="first_name"
             name="first_name"
             type="text"
             aria-label="First Name"
             placeholder="First Name"
           />
+          <p class="warning invisible">First name is blank</p>
 
           <input
+            id="last_name"
             name="last_name"
             type="text"
             aria-label="Last Name"
             placeholder="Last Name"
           />
+          <p class="warning invisible">Last name is blank</p>
 
           <input
+            id="email_address"
             name="email_address"
             type="email"
             aria-label="Email Address"
             placeholder="Email Address"
           />
+          <p id="emailWarning" class="warning invisible">
+            Email address is blank
+          </p>
 
           <input
+            id="password"
             name="password"
             type="password"
             aria-label="Password"
             placeholder="Password"
           />
+          <p class="warning invisible">Password is blank</p>
 
-          <button class="button__submit" type="submit">
+          <button id="submit_button" class="button__submit" type="submit">
             Claim your free trial
           </button>
 
@@ -86,5 +100,6 @@
         >. Coded by <a href="https://github.com/Oculareo">Oculareo</a>.
       </p>
     </footer>
+    <script src="index.js"></script>
   </body>
 </html>
