@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Sign Up Form repo on Github](https://github.com/Oculareo/sign-up-form)
+- Live Site URL: [Sign Up Form](https://sign-up-form-omega.vercel.app/)
 
 ## My process
 
